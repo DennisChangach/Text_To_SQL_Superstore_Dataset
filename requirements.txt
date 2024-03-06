@@ -1,0 +1,13 @@
+langchain==0.0.284
+python-dotenv==1.0.0
+streamlit==1.22.0
+tiktoken==0.4.0
+faiss-cpu==1.7.4
+protobuf~=3.19.0
+google-generativeai
+langchain_experimental
+langchain_google_genai
+langchain_community
+mysql-connector-python
+pymysql
+sentence-transformers
