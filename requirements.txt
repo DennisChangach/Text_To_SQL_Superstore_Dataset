@@ -11,3 +11,4 @@ langchain_community
 mysql-connector-python
 pymysql
 sentence-transformers
+pandas
