@@ -27,12 +27,13 @@ def get_few_shot_db_chain():
     #loading g the llm
     llm=GooglePalm(google_api_key=os.environ['GOOGLE_API_KEY'],temperature=0.6)
 
-    #Connecting to the MySQL Database on Local
+    #Connecting to the MySQL Database on PHP My Admin
     #db_password: /Do Not Use Special Characters/
-    db_user = "root"
-    db_password = "root1234"
-    db_host = "localhost"
-    db_name = "sample_superstore"
+    #db_password: Do Not Use Special Characters
+    db_user = os.environ["db_user"]
+    db_password = os.environ["db_password"]
+    db_host = os.environ["db_host"]
+    db_name = os.environ["db_name"]
 
     db = SQLDatabase.from_uri(f"mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}",sample_rows_in_table_info=3)
 

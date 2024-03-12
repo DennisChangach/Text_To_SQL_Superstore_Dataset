@@ -7,13 +7,13 @@ from sql_generator import get_df
 #The Main Function
 def main():
 
-    st.set_page_config("Text To SQL")
+    st.set_page_config(page_title="Text To SQL",page_icon="")
     st.title("SuperStore Database Q&A 🏪")
 
     #Chat Window
     
     with st.chat_message("assistant"):
-        st.write("Please go ahead and Query your SuperStore Database")
+        st.write("Please go ahead and Query your Database")
     
     #Initializing Mwessage history
     if "messages" not in st.session_state:
@@ -90,13 +90,23 @@ def main():
     #Side Menu Bar
     with st.sidebar:
         st.title("Configuration:⚙️")
-    
+
+        
+        
+
+
+
     
     #Function to clear history
     def clear_chat_history():
         st.session_state.messages = []
     #Button for clearing history
     st.sidebar.button("Clear Chat History",on_click=clear_chat_history)
+
+    
+    
+    #Button
+
 
 #Running the File
 if __name__ == "__main__":
