@@ -13,7 +13,7 @@ def main():
     #Chat Window
     
     with st.chat_message("assistant"):
-        st.write("Please go ahead and Query your Database")
+        st.write("Please go ahead and Query your Database: e.g. What are the top 5 sub-categories with the highest sales?")
     
     #Initializing Mwessage history
     if "messages" not in st.session_state:
@@ -90,6 +90,7 @@ def main():
     #Side Menu Bar
     with st.sidebar:
         st.title("Configuration:⚙️")
+        st.write("Check the Database Overview tab to learn more about the data and the possible questions you may want answered!")
 
         
         
