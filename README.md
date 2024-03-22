@@ -1,4 +1,5 @@
 # Chat with your Database: Simplifying Database Queries with Langchain.
+<img width="830" alt="db_query" src="https://github.com/DennisChangach/Text_To_SQL_Superstore_Dataset/assets/41690660/406ae164-9548-47e6-a8e4-365a2bac8600">
 
 ### Introduction
 In today's data-driven world, the ability to extract insights from databases is crucial for decision-making across various domains. However, querying databases often requires proficiency in SQL or a deep understanding of data analysis techniques, posing a significant barrier for non-technical users. 
